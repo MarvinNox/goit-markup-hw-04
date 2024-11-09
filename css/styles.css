@@ -73,8 +73,8 @@ img {
 .wrapper-header {
   background-color: #ffffff;
   border-bottom: 1px solid #e7e9fc;
-  box-shadow: зі значенням 0px 2px 1px rgba(46, 47, 66, 0.08),
-    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+  box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 2px 1px 0 rgba(46, 47, 66, 0.08);
 }
 .wrapper-footer {
   background-color: #2e2f42;
@@ -277,7 +277,7 @@ ul {
 }
 .link-nav {
   position: relative;
-  color: #2e2f42;
+  color: #404bbf;
   font-weight: 500;
   padding-top: 24px;
   padding-bottom: 24px;
@@ -399,18 +399,18 @@ ul {
   margin-bottom: 16px;
 }
 .social-box {
-  margin-left: 120px;
+  margin: 0;
 }
-.social-box .social-box-list {
-  gap: 16px;
-}
+
 .team-card .social-box-list {
   gap: 24px;
 }
-.team-card .social-box-link:hover {
+.team-card .social-box-list .social-box-link:hover,
+.team-card .social-box-list .social-box-link:hover {
   background-color: #404bbf;
 }
-.social-box .social-box-link:hover {
+.social-box-list .social-box-link:hover,
+.social-box-list .social-box-link:active {
   background-color: #31d0aa;
 }
 .social-box-list {
@@ -418,6 +418,7 @@ ul {
   justify-content: center;
   padding: 0;
   margin: 0;
+  gap: 16px;
 }
 .social-box-item {
   height: 40px;
@@ -434,4 +435,16 @@ ul {
 }
 .icon {
   fill: #f4f4fd;
+}
+
+.footer-logo-box {
+  margin-right: 120px;
+}
+.team-list .social-box-list .icon {
+  width: 16px;
+  height: 16px;
+}
+.social-box-list .icon {
+  width: 24px;
+  height: 24px;
 }
