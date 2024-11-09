@@ -31,11 +31,12 @@ img {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(/images/people-office.jpg);
-  background-size: contain;
+    url(../images/people-office.jpg);
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  margin-top: 0px;
+  margin: 0 auto;
+  max-width: 1440px;
   padding-top: 188px;
   padding-bottom: 188px;
 }
@@ -72,6 +73,8 @@ img {
 .wrapper-header {
   background-color: #ffffff;
   border-bottom: 1px solid #e7e9fc;
+  box-shadow: зі значенням 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 .wrapper-footer {
   background-color: #2e2f42;
@@ -83,6 +86,8 @@ img {
   padding-top: 100px;
   padding-bottom: 100px;
   display: block;
+  margin: 0 auto;
+  max-width: 1440px;
 }
 .visually-hidden {
   position: absolute;
@@ -255,7 +260,6 @@ ul {
 }
 
 .nav-list {
-  position: relative;
   gap: 40px;
   margin: 0 auto;
   display: flex;
@@ -272,18 +276,19 @@ ul {
   margin: 0 auto;
 }
 .link-nav {
+  position: relative;
   color: #2e2f42;
   font-weight: 500;
   padding-top: 24px;
   padding-bottom: 24px;
 }
-.link-nav:focus::after {
+.link-nav::after {
   position: absolute;
-  bottom: 0;
+  bottom: -1px;
   left: 0;
   content: "";
   border-radius: 2px;
-  width: 48px;
+  width: 100%;
   height: 4px;
   background: #404bbf;
   margin: 0;
@@ -397,10 +402,10 @@ ul {
 .team-card .social-box-list {
   gap: 24px;
 }
-.team-card .social-box-item:hover {
+.team-card .social-box-link:hover {
   background-color: #404bbf;
 }
-.social-box .social-box-item:hover {
+.social-box .social-box-link:hover {
   background-color: #31d0aa;
 }
 .social-box-list {
@@ -411,12 +416,18 @@ ul {
   margin: 0;
 }
 .social-box-item {
-  background-color: #4d5ae5;
   height: 40px;
   width: 40px;
-  border-radius: 100%;
+}
+.social-box-link {
+  background-color: #4d5ae5;
+  border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  height: 100%;
+}
+.icon {
+  fill: #f4f4fd;
 }
