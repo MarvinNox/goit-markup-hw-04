@@ -306,7 +306,7 @@ ul {
   width: calc((100% - 72px) / 4);
 }
 .team-card-name {
-  padding-bottom: 8px;
+  padding-bottom: 32px;
   padding-top: 32px;
   text-align: center;
 }
@@ -317,8 +317,11 @@ ul {
   letter-spacing: 0.02em;
   color: #434455;
   padding-top: 0;
-  padding-bottom: 0;
+  padding-bottom: 0px;
   margin: 0;
+}
+.team-list .small-text {
+  padding-bottom: 8px;
 }
 .small-text-footer {
   font-weight: 400;
@@ -414,7 +417,6 @@ ul {
   display: flex;
   justify-content: center;
   padding: 0;
-  padding-bottom: 32px;
   margin: 0;
 }
 .social-box-item {
