@@ -87,7 +87,8 @@ img {
   padding-bottom: 100px;
   display: block;
   margin: 0 auto;
-  max-width: 1440px;
+  /*max-width: 1440px; */
+  align-items: baseline;
 }
 .visually-hidden {
   position: absolute;
@@ -167,7 +168,7 @@ a:hover {
   display: flex;
   align-items: center;
 }
-.advantages-item-icon-box {
+.icon-box {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -440,11 +441,11 @@ ul {
 .footer-logo-box {
   margin-right: 120px;
 }
-.team-list .social-box-list .icon {
+.wrapper-team .icon {
   width: 16px;
   height: 16px;
 }
-.social-box-list .icon {
+.wrapper-footer .icon {
   width: 24px;
   height: 24px;
 }
