@@ -88,7 +88,6 @@ img {
   display: block;
   margin: 0 auto;
   /*max-width: 1440px; */
-  align-items: baseline;
 }
 .visually-hidden {
   position: absolute;
@@ -405,7 +404,8 @@ ul {
 .team-card .social-box-list {
   gap: 24px;
 }
-
+/* Its works, but we need another way to realize it */
+/*
 .wrapper-team .social-box-link:active,
 .wrapper-team .social-box-link:hover {
   background-color: #404bbf;
@@ -414,6 +414,20 @@ ul {
 .wrapper-footer .social-box-link:hover {
   background-color: #31d0aa;
 }
+*/
+.wrapper-team .social-box-link:active {
+  background-color: #404bbf;
+}
+.wrapper-team .social-box-link:hover {
+  background-color: #404bbf;
+}
+.wrapper-footer .social-box-link:active {
+  background-color: #31d0aa;
+}
+.wrapper-footer .social-box-link:hover {
+  background-color: #31d0aa;
+}
+
 .social-box-list {
   display: flex;
   justify-content: center;
@@ -441,6 +455,10 @@ ul {
 .footer-logo-box {
   margin-right: 120px;
 }
+
+/* Its works, but we need another way to realize it */
+
+/*
 .wrapper-team .icon {
   width: 16px;
   height: 16px;
@@ -448,4 +466,8 @@ ul {
 .wrapper-footer .icon {
   width: 24px;
   height: 24px;
+}
+*/
+.test {
+  align-items: baseline;
 }
