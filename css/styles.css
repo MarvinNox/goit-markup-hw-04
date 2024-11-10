@@ -415,13 +415,13 @@ ul {
   background-color: #31d0aa;
 }
 */
-.wrapper-team .social-box-link:active {
+.wrapper-team .social-box-link:focus {
   background-color: #404bbf;
 }
 .wrapper-team .social-box-link:hover {
   background-color: #404bbf;
 }
-.wrapper-footer .social-box-link:active {
+.wrapper-footer .social-box-link:focus {
   background-color: #31d0aa;
 }
 .wrapper-footer .social-box-link:hover {
