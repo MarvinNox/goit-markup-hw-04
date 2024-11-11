@@ -282,7 +282,7 @@ ul {
   padding-top: 24px;
   padding-bottom: 24px;
 }
-.link-nav::after {
+.nav-list li:first-child .link-nav::after {
   position: absolute;
   bottom: -1px;
   left: 0;
@@ -404,17 +404,17 @@ ul {
 .team-card .social-box-list {
   gap: 24px;
 }
-/* Its works, but we need another way to realize it */
-/*
-.wrapper-team .social-box-link:active,
+
+.wrapper-team .social-box-link:focus,
 .wrapper-team .social-box-link:hover {
   background-color: #404bbf;
 }
-.wrapper-footer .social-box-link:active,
+.wrapper-footer .social-box-link:focus,
 .wrapper-footer .social-box-link:hover {
   background-color: #31d0aa;
 }
-*/
+/* Its works, but we need another way to realize it */
+/*
 .wrapper-team .social-box-link:focus {
   background-color: #404bbf;
 }
@@ -427,7 +427,7 @@ ul {
 .wrapper-footer .social-box-link:hover {
   background-color: #31d0aa;
 }
-
+*/
 .social-box-list {
   display: flex;
   justify-content: center;
@@ -457,7 +457,6 @@ ul {
 }
 
 /* Its works, but we need another way to realize it */
-
 /*
 .wrapper-team .icon {
   width: 16px;
